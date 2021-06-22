@@ -1,6 +1,7 @@
-var express = require('express')
-var cors = require('cors')
-var app = express()
+'use strict';
+const express = require('express')
+const cors = require('cors')
+const app = express()
 
 app.use(cors())
 
@@ -8,7 +9,7 @@ app.get('/products/:id', function (req, res, next) {
   res.json({msg: 'This is CORS-enabled for all origins!'})
 })
 
-app.get('/test', () => {
+app.get('/test', (req, res) => {
     res.json({msg: "hello world"})
 })
 
