@@ -7,11 +7,6 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 // });
 
 
-process.on('unhandledRejection', (reason, p) => {
-    console.error('Unhandled Rejection at:', p, 'reason:', reason)
-    process.exit(1)
-});
-
 axios.get('https://cvp1.moph.go.th/api/ImmunizationHistory?cid=1409900727635',
     {
         headers: {
