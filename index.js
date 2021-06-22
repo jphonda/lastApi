@@ -1,9 +1,10 @@
+'use strict';
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const axios = require('axios');
+// const axios = require('axios');
 
-process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+// process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
 
 app.use(cors());
@@ -25,6 +26,6 @@ app.get('/home', (req, res) => {
 })
 
 
-app.listen(80, () => {
+app.listen(3000, () => {
     console.log('Start server at port 3000.')
 })
