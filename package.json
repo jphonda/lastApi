@@ -2,8 +2,6 @@
   "name": "netlify-express",
   "version": "1.0.0",
   "main": "home.js",
-  "type": "module",
-  
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",

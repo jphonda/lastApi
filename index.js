@@ -1,5 +1,5 @@
 // import https from 'https';
-import axios from 'axios';
+const axios = require('axios');
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
 // axios.default.httpsAgent = new https.Agent({
