@@ -24,8 +24,8 @@ app.get('/id/:id', async (req, res) => {
     } catch (err) {
         console.error(err)
     }
-
-    const response = await axios.get(`https://cvp1.moph.go.th/api/ImmunizationHistory?cid=${id}`,
+    
+    const response = await axios.get(`https://cvp1.moph.go.th/api/ImmunizationTarget?cid=${id}`,
         {
             headers: {
                 'Authorization': `Bearer ${dataFile.token}`
@@ -49,7 +49,7 @@ app.get('/id/:id', async (req, res) => {
         });
 
     if ( response && response.status === 200) {
-        res.send(response.data.result.patient);
+        res.send(response.data);
     }
 
 
