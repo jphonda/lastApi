@@ -9,7 +9,7 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 app.use(cors())
 
 
-app.get('/', (req, res) => {
+app.get('/index', (req, res) => {
     
     res.send("Hello world")
 
