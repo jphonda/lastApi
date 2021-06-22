@@ -6,11 +6,10 @@ const axios = require('axios');
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
 
-app.use(cors())
+app.use(cors());
 
 
-app.get('/index', (req, res) => {
-    
+app.get('/home', (req, res) => {    
     res.send("Hello world")
 
     // const id = req.params.id;
