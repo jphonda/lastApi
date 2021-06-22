@@ -1,8 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const axios = require('axios');
+
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
+
+app.use(cors())
 
 
 app.get('/', (req, res) => {
@@ -21,6 +25,7 @@ app.get('/', (req, res) => {
     //     });  
 })
 
-app.listen(3000, () => {
+
+app.listen(80, () => {
     console.log('Start server at port 3000.')
 })
