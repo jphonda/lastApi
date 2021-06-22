@@ -1,10 +1,10 @@
-import https from 'https';
+// import https from 'https';
 import axios from 'axios';
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
-axios.default.httpsAgent = new https.Agent({
-    rejectUnauthorized: true,
-});
+// axios.default.httpsAgent = new https.Agent({
+//     rejectUnauthorized: true,
+// });
 
 
 process.on('unhandledRejection', (reason, p) => {
